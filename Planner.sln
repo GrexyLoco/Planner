@@ -7,12 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planner.Droid", "Planner\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planner.iOS", "Planner\Planner.iOS\Planner.iOS.csproj", "{22272627-63AE-40DB-B308-426C27615F6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planner.UWP", "Planner\Planner.UWP\Planner.UWP.csproj", "{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Planner", "Planner\Planner\Planner.shproj", "{FCC34DAA-1970-45DD-8640-0680C3DC4AF7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Planner\Planner\Planner.projitems*{1ca035ee-7792-4f3d-a160-1068b75b10c2}*SharedItemsImports = 4
+		Planner\Planner\Planner.projitems*{22272627-63ae-40db-b308-426c27615f6a}*SharedItemsImports = 4
 		Planner\Planner\Planner.projitems*{fcc34daa-1970-45dd-8640-0680c3dc4af7}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -146,66 +146,6 @@ Global
 		{22272627-63AE-40DB-B308-426C27615F6A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{22272627-63AE-40DB-B308-426C27615F6A}.Release|x64.ActiveCfg = Release|iPhone
 		{22272627-63AE-40DB-B308-426C27615F6A}.Release|x86.ActiveCfg = Release|iPhone
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|Any CPU.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|Any CPU.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|Any CPU.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|ARM.ActiveCfg = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|ARM.Build.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|ARM.Deploy.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhone.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhone.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhone.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x64.ActiveCfg = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x64.Build.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x64.Deploy.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x86.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x86.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Ad-Hoc|x86.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|Any CPU.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|Any CPU.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|Any CPU.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|ARM.ActiveCfg = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|ARM.Build.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|ARM.Deploy.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhone.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhone.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhone.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhoneSimulator.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhoneSimulator.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|iPhoneSimulator.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x64.ActiveCfg = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x64.Build.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x64.Deploy.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x86.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x86.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.AppStore|x86.Deploy.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|ARM.ActiveCfg = Debug|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|ARM.Build.0 = Debug|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|ARM.Deploy.0 = Debug|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|iPhone.ActiveCfg = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x64.ActiveCfg = Debug|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x64.Build.0 = Debug|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x64.Deploy.0 = Debug|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x86.ActiveCfg = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x86.Build.0 = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Debug|x86.Deploy.0 = Debug|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|Any CPU.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|ARM.ActiveCfg = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|ARM.Build.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|ARM.Deploy.0 = Release|ARM
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|iPhone.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x64.ActiveCfg = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x64.Build.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x64.Deploy.0 = Release|x64
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x86.ActiveCfg = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x86.Build.0 = Release|x86
-		{CF00C5A3-CA6C-46E0-AE61-903A3E41B2E4}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

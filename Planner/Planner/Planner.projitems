@@ -10,8 +10,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LayoutDefinitions\LayoutDefinitions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Behaviors\PlanningPoints.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Behaviors\PlanningPointsTableSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\CreateNamePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\CreationMasterPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\InfoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\DetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\MasterPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\SecondPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)africantaste.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)sonneafrica.jpg" />
   </ItemGroup>
 </Project>

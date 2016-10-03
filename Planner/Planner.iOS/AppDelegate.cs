@@ -23,7 +23,10 @@ namespace Planner.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new Planner.App ());
+            //App.DeviceWindowSize = new Size(Resources.DisplayMetrics.WidthPixels / ResourcesApp.DeviceWindowSize = new Size
+            //    (UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height).DisplayMetrics.Density, Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+
+            LoadApplication (new Planner.App ());
 
 			return base.FinishedLaunching (app, options);
 		}
