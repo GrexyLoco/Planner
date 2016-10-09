@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CostumRenderers\CostumTableSectionRenderer.cs" />
     <Compile Include="CostumRenderers\PlanningPointsRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
-using System.Diagnostics;
-using Planner.UI;
 
 namespace Planner.UI.Behaviors
 {
@@ -23,7 +19,6 @@ namespace Planner.UI.Behaviors
                 StackLayout SSubList = new StackLayout
                 {
                     StyleId = "Stack" + list[listIncrement][0],
-                    //BackgroundColor = Color.Aqua,
                 };
               
                 ViewCell VCSubList = new ViewCell
@@ -34,8 +29,9 @@ namespace Planner.UI.Behaviors
 
                 //VCSubList.Tapped += OnViewCellTapped(list[listIncrement][0]);
 
-                TableSection TSSubList = new TableSection(/*list[listIncrement][0]*/);
+                TableSection TSSubList = new TableSection(list[listIncrement][0]);
                 TSSubList.Add(VCSubList);
+                //TableSectionBase<Label>;
 
                 Root.Add(TSSubList);
 
@@ -55,15 +51,12 @@ namespace Planner.UI.Behaviors
                     };
                     if (i != 0)
                     {
-                        //label.FontSize = 10;
                         label.GestureRecognizers.Add(new TapGestureRecognizer
                         {
                             Command = new Command(() => OnLabelClicked(label)),
                         });
                     }
-
-                    
-                    
+                                    
                     if (i <= labelCount)
                     {
                         SSubList.Children.Add(label);
