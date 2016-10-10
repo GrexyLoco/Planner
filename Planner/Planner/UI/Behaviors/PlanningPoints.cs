@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace Planner.UI.Behaviors
 {
-    class PlanningPoints : TableView
+    class PlanningPoints : TableView//, IOnClickListener, AdapterView.IOnItemSelectedListener
     {
         public PlanningPoints(List<List<string>> list)
         {
@@ -13,35 +14,32 @@ namespace Planner.UI.Behaviors
             var i = 0;
             var listIncrement = 0;
 
-        //---------------------------------------------------------------------------
+            //---------------------------------------------------------------------------
             foreach (var sublist in list)
             {
                 StackLayout SSubList = new StackLayout
                 {
                     StyleId = "Stack" + list[listIncrement][0],
                 };
-              
+
                 ViewCell VCSubList = new ViewCell
                 {
-                    StyleId = "VC" + list[listIncrement][0],   
-                                         
+                    StyleId = "VC" + list[listIncrement][0],
                 };
 
                 //VCSubList.Tapped += OnViewCellTapped(list[listIncrement][0]);
 
                 TableSection TSSubList = new TableSection(list[listIncrement][0]);
                 TSSubList.Add(VCSubList);
-                //TableSectionBase<Label>;
-
+                //VCSubList.Click +=
                 Root.Add(TSSubList);
-
                 listIncrement++;
-        //---------------------------------------------------------------------------
+                //---------------------------------------------------------------------------
 
                 foreach (var text in sublist)
                 {
                     var labelCount = sublist.Count - 1;
-                    //if(i == 0) { i++; continue; }
+                    if(i == 0) { i++; continue; }
                     Label label = new Label
                     {
                         StyleId = text,
@@ -49,6 +47,7 @@ namespace Planner.UI.Behaviors
                         HorizontalTextAlignment = TextAlignment.Start,
                         IsVisible = true,
                     };
+
                     if (i != 0)
                     {
                         label.GestureRecognizers.Add(new TapGestureRecognizer
@@ -56,7 +55,7 @@ namespace Planner.UI.Behaviors
                             Command = new Command(() => OnLabelClicked(label)),
                         });
                     }
-                                    
+
                     if (i <= labelCount)
                     {
                         SSubList.Children.Add(label);
@@ -65,10 +64,17 @@ namespace Planner.UI.Behaviors
                         i++;
                     }
                     VCSubList.View = SSubList;
-                    
+
                 }
                 i = 0;
-            }          
+            }
+        }
+
+
+        private void OnTSClicked(TableSection tSSubList)
+        {
+            tSSubList.Title.Replace('e', 'ö');
+            throw new NotImplementedException();
         }
         #region private Methods:
         private void OnLabelClicked(Label label)
@@ -78,4 +84,6 @@ namespace Planner.UI.Behaviors
         }
         #endregion
     }
+
 }
+

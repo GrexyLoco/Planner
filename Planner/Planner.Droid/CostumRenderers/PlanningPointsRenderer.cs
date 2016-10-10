@@ -1,7 +1,9 @@
 using Android.Content;
 using Android.Views;
+using Android.Widget;
 using Costumization.Droid;
 using System;
+using System.Linq;
 using System.Reflection;
 using Xamarin.Forms;
 using ListView = Android.Widget.ListView;
@@ -11,7 +13,7 @@ using View = Android.Views.View;
 
 namespace Costumization.Droid
 {
-    class PlanningPointsRenderer : Xamarin.Forms.Platform.Android.TableViewRenderer
+    class PlanningPointsRenderer : Xamarin.Forms.Platform.Android.TableViewRenderer//, View.IOnClickListener //AdapterView.IOnItemSelectedListener
     {
         //public void 
 
@@ -46,23 +48,26 @@ namespace Costumization.Droid
                     var @params = new object[] { position, false, false };
                     var cell = CellForPosition.Invoke(this, @params) as Cell;   //Reflection to base method to determine cell type
 
-                    //bool shouldHide = (bool) @params[1] /*out isHeader*/
-                    //                  && string.IsNullOrEmpty((cell as TextCell)?.Text);
+                    //bool shouldHide = (bool)@params[1]; /*out isHeader*/// && string.IsNullOrEmpty((cell as TextCell)?.Text);
 
                     //With view recycling, we need to ensure Visibility is set to the proper value
                     //var visibility = shouldHide
-                    //    ? ViewStates.Gone
+                    //    ? ViewStates.Invisible
                     //    : ViewStates.Visible;
-
                     //cellView.Visibility = visibility;
                     cellView.Clickable = true;//
                     cellView.Click += OnHeaderClicked;
+
 
                     //var cellGroup = cellView as ViewGroup;
                     //if (cellGroup != null)
                     //{
                     //    foreach (var child in Enumerable.Range(0, cellGroup.ChildCount).Select(cellGroup.GetChildAt))
+                    //    {
                     //        child.Visibility = visibility;
+                            
+                    //    }
+                            
                     //}
                 }
 
