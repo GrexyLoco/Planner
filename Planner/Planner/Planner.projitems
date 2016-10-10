@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)UI\MasterPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UI\MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UI\SecondPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\StartViewMasterContent.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)africantaste.jpg">

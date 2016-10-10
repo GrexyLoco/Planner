@@ -15,7 +15,7 @@ namespace Planner
 		public App ()
 		{
             // The root page of your application
-            MainPage = new CreationMasterPage();//mainPage;
+            MainPage = /*new CreationMasterPage();*/mainPage;
 		}
 
 		protected override void OnStart ()
