@@ -107,7 +107,7 @@ namespace Planner.UI
             mainGrid.Children.Add(Body, 0, 1);
             mainGrid.Children.Add(Footer, 0, 2);
             #endregion
-
+            
             Content = mainGrid;
 
             

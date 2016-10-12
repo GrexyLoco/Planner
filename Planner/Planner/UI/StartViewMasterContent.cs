@@ -9,6 +9,61 @@ namespace Planner.UI
     {
         public StartViewMasterContent()
         {
+            #region Header Definition
+            StackLayout Header = new StackLayout();
+            Header.HorizontalOptions = LayoutOptions.Center;
+            Header.VerticalOptions = LayoutOptions.Center;
+            Grid headerGrid = new Grid { HorizontalOptions = LayoutOptions.Fill, VerticalOptions = LayoutOptions.Fill, };
+
+            Header.Children.Add(new Frame
+            {
+                OutlineColor = Color.Gray,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                Content = headerGrid,
+            });
+
+
+            ColumnDefinition leftHeaderColumn = new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) };
+            ColumnDefinition middleHeaderColumn = new ColumnDefinition { Width = new GridLength(5, GridUnitType.Star) };
+            ColumnDefinition rightHeaderColumn = new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) };
+
+            Label headerLabel = new Label
+            {
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                Text = "Header"
+            };
+
+            headerGrid.ColumnDefinitions.Add(leftHeaderColumn);
+            headerGrid.ColumnDefinitions.Add(middleHeaderColumn);
+            headerGrid.ColumnDefinitions.Add(rightHeaderColumn);
+
+            //headerGrid.Children.Add(backIcon, 0, 0);
+            headerGrid.Children.Add(headerLabel, 1, 0);
+            #endregion
+            #region Footer Definition
+            StackLayout Footer = new StackLayout();
+            //Footer.HorizontalOptions = LayoutOptions.Fill;
+            //Footer.VerticalOptions = LayoutOptions.Fill;
+            Grid footerGrid = new Grid { HorizontalOptions = LayoutOptions.Fill, VerticalOptions = LayoutOptions.Fill, };
+
+            footerGrid.Children.Add(new Label
+            {
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                Text = "Footer"
+            });
+
+            Footer.Children.Add(new Frame
+            {
+                OutlineColor = Color.Gray,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                Content = footerGrid,
+            });
+
+            #endregion
 
             #region StartViewMasterContent
             Button btnOpt1 = new Button { Text = "Neues Fest", FontSize = 16 };
